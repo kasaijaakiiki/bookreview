@@ -49,6 +49,7 @@ test:
 #
 production:
   <<: *default
-  database: bookmarks_production
-  username: bookmarks
-  password: <%= ENV['BOOKMARKS_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
+  #database: bookmarks_production
+  #username: bookmarks
+  #password: <%= ENV['BOOKMARKS_DATABASE_PASSWORD'] %>
